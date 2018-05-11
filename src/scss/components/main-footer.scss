@@ -1,0 +1,55 @@
+.main-footer {
+  @include center-flex("ver");
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main-footer__rights {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 14px;
+  color: $section-main-color;
+}
+
+.main-footer__rights--laaqiq {
+  color: $secondary-accent-color;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form__input {
+  display: block;
+  font-family: $secondary-font;
+  font-size: 15px;
+  font-style: italic;
+  color: $section-main-color;
+}
+
+.footer-form__input::placeholder {
+  font-family: $secondary-font;
+  font-size: 15px;
+  font-style: italic;
+  color: $input-text-color;
+}
+
+.footer-form__button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  padding: 0;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+  color: $main-text-color;
+  background-color: $section-second-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

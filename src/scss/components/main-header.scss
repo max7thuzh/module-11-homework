@@ -1,0 +1,116 @@
+.wrapper {
+  margin-bottom: 50px;
+  min-height: 500px;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-header {
+  padding-top: 25px;
+}
+
+.main-navigation {
+  @include center-flex("ver");
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.main-logo {
+  font-family: $main-font;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  color: $main-text-color;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu__item {
+  position: relative;
+}
+
+.main-menu__item {
+  &:not(:last-child) {
+    margin-right: 55px;
+  }
+}
+
+.main-menu__link {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $main-text-color;
+  transition: color 0.2s linear;
+  &:hover,
+  &:focus {
+    color: $main-accent-color;
+  }
+}
+
+.main-menu--underline {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 3px;
+  background-color: $main-accent-color;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.main-menu__item {
+  &:hover .main-menu--underline {
+    opacity: 1;
+  }
+}
+
+.main-menu__icon {
+  fill: $main-text-color;
+  transition: fill 0.2s linear;
+}
+
+.main-menu__icon {
+  &:hover {
+    fill: $main-accent-color;
+  }
+}
+
+.main-header__title-description {
+  margin-bottom: 30px;
+  font-family: $title-description-font;
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  color: $main-text-color;
+}
+
+.main-header__title {
+  margin-bottom: 60px;
+  padding: 0 350px;
+  font-family: $main-font;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: $main-text-color;
+}
+
+.learn-more__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid $main-text-color;
+  background-color: transparent;
+  color: $main-text-color;
+}
